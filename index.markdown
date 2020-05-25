@@ -5,9 +5,9 @@ Can't think of anything to do?
   <html>
   <script>
     var fs = require("fs");
-    var text = fs.readFileSync("./mytext.txt").toString('utf-8');
+    var text = fs.readFileSync("./whattodo.txt").toString('utf-8');
     var textByLine = text.split("\n");
-    console.log(textByLine[0]);
+    alert(textByLine[0]);
     
   </script>
   <button type="button" name="generate" class="btn">let's go</button>
