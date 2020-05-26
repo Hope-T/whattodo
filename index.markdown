@@ -5,18 +5,27 @@ Can't think of anything to do?
 
 <html>
 
-<button onclick="myTask()">let's go</button>
+<button onclick="myTask(./whattodo.txt)">let's go</button>
 
 <script>
   
-function myTask() {
-const fs = require('fs') 
-  
-fs.readFile('whattodo.txt', (err, data) => { 
-    if (err) throw err; 
-  
-    alert(data.toString()+""); 
-}) 
+function myTask(file) {
+
+ var rawFile = new XMLHttpRequest();
+    rawFile.open("GET", file, false);
+    rawFile.onreadystatechange = function ()
+    {
+        if(rawFile.readyState === 4)
+        {
+            if(rawFile.status === 200 || rawFile.status == 0)
+            {
+                var allText = rawFile.responseText;
+                alert(allText);
+            }
+        }
+    }
+    rawFile.send(null);
+alert("this is working");
 }
 </script>
     
