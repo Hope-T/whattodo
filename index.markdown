@@ -9,10 +9,10 @@ Can't think of anything to do?
 
 <script>
 function myTask() {
-  const fs = require('fs') 
- fs.readAsArrayBuffer('Input.txt', 'utf-8', (err, data) => { 
-    if (err) throw err; 
-  alert(data[0]);
+  var fs = require("fs");
+  var text = fs.readFileSync("./whattodo.txt").toString('utf-8');;
+  var textByLine = text.split("\n")
+  alert("working");
 }
 </script>
     
