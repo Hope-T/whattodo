@@ -5,11 +5,14 @@ Can't think of anything to do?
 
 <html>
 
-<button onclick="myTask()">Try it</button>
+<button onclick="myTask()">let's go</button>
 
 <script>
 function myTask() {
-  alert("Hello! I am an alert box!");
+  const fs = require('fs') 
+ fs.readAsArrayBuffer('Input.txt', 'utf-8', (err, data) => { 
+    if (err) throw err; 
+  alert(data[0]);
 }
 </script>
     
