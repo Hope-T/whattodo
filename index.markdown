@@ -8,11 +8,15 @@ Can't think of anything to do?
 <button onclick="myTask()">let's go</button>
 
 <script>
-var fs = require("fs");
+  
 function myTask() {
-  //var text = fs.readFileSync("./whattodo.txt").toString('utf-8');;
-  //var textByLine = text.split("\n")
-  alert("working");
+const fs = require('fs') 
+  
+fs.readFile('whattodo.txt', (err, data) => { 
+    if (err) throw err; 
+  
+    console.log(data.toString()); 
+}) 
 }
 </script>
     
