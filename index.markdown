@@ -1,11 +1,11 @@
 # What should I do?
 Bored?
-Can't think of anything to do? yy
+Can't think of anything to do? 
 **Run** this generator for an idea!
 
 <html>
 
-<button onclick="myTask(file:///users/hopetsai/Downloads/whattodo.txt)">let's go</button>
+<button onclick="myTask("file:///users/hopetsai/Downloads/whattodo.txt")">let's go</button>
 
 <script>
   
