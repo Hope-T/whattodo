@@ -8,8 +8,8 @@ Can't think of anything to do?
 <button onclick="myTask()">let's go</button>
 
 <script>
+var fs = require("fs");
 function myTask() {
-  var fs = require("fs");
   //var text = fs.readFileSync("./whattodo.txt").toString('utf-8');;
   //var textByLine = text.split("\n")
   alert("working");
