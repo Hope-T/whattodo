@@ -1,6 +1,6 @@
 # What should I do?
 Bored?
-Can't think of anything to do? 
+Can't think of anything to do? YES!
 **Run** this generator for an idea!
 
 <html>
@@ -12,7 +12,7 @@ Can't think of anything to do?
 function myTask(file) {
 var text = file.toString();
 text = text.split("\n");
-alert("this is working");
+alert(text.get[0]);
 }
 </script>
     
