@@ -15,7 +15,7 @@ const fs = require('fs')
 fs.readFile('whattodo.txt', (err, data) => { 
     if (err) throw err; 
   
-    console.log(data.toString()); 
+    alert(data.toString()+""); 
 }) 
 }
 </script>
