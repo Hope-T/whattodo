@@ -5,7 +5,7 @@ Can't think of anything to do? YES!
 
 <html>
 
-<button onclick="myTask('file:///Users/hopetsai/Downloads/whattodo.txt')">let's go</button>
+<button onclick="myTask('/whattodo.txt')">let's go</button>
 
 <script>
   
