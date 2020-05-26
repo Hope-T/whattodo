@@ -6,15 +6,26 @@ Can't think of anything to do?
 <html>
   
 <button onclick="findTask()">let's go</button>
+
 <script>
-function findTask(){
+function findTask() {
   var fs = require("fs");
   var text = fs.readFileSync("./whattodo.txt").toString('utf-8');
   var textByLine = text.split("\n");
   alert(textByLine[0]);
   alert("This is working");
 }
-    
 </script>
+  
+<p>Click the button to display an alert box.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  alert("Hello! I am an alert box!");
+}
+</script>
+    
 </html>
   
