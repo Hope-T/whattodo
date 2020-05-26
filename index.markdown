@@ -9,10 +9,6 @@ Can't think of anything to do?
 
 <script>
 function findTask() {
-  var fs = require("fs");
-  var text = fs.readFileSync("./whattodo.txt").toString('utf-8');
-  var textByLine = text.split("\n");
-  alert(textByLine[0]);
   alert("This is working");
 }
 </script>
