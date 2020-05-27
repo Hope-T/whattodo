@@ -1,22 +1,33 @@
 # What should I do?
 Bored?
-Can't think of anything to do? yy
+Can't think of anything to do? 
 **Run** this generator for an idea!
 
 <html>
-
-<script id="listOfTasks" data-search="text" src="file:///users/hopetsai/Downloads/whattodo.txt" >
-var script_tag = document.getElementById('listOfTasks')
-var search_term = script_tag.getAttribute("data-search");
   
-<button onclick="myTask(search_term)">let's go</button>
+<button onclick="myTask("file:///users/hopetsai/Downloads/whattodo.txt")">let's go</button>
 
 <script>
   
 function myTask(file) {
-var text = file.toString();
-text = text.split("\n");
-alert(text[0]);
+
+ var rawFile = new XMLHttpRequest();
+    rawFile.open("GET", file, false);
+    rawFile.onreadystatechange = function ()
+    {
+        if(rawFile.readyState === 4)
+        {
+            if(rawFile.status === 200 || rawFile.status == 0)
+            {
+                var allText = rawFile.responseText;
+                alert(allText);
+            }
+        }
+    }
+    rawFile.send(null);
+//var text = file.toString();
+//text = text.split("\n");
+//alert(text[0]);
 }
 </script>
     
