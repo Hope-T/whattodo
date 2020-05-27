@@ -5,7 +5,7 @@ Can't think of anything to do?
 
 <html>
   
-<button onclick="myTask('file:///users/hopetsai/Downloads/whattodo.txt')">let's go</button>
+<button onclick="myTask('whattodo.txt')">let's go</button>
 
 <script>
   
@@ -21,7 +21,7 @@ function myTask(file) {
             {
                 var allText = rawFile.responseText;
                 var text = allText.split("\n");
-                alert(text[0]);
+                alert(text[0] + "is there an alert"?);
             }
         }
     }
