@@ -12,9 +12,9 @@ Can't think of anything to do?
 function myTask() {
 
 var fs = require("fs");
-var text = fs.readFileSync("./whattodo.txt");
+var text = fs.readFileSync("whattodo.txt");
 var textByLine = text.split("\n");
-alert(textByLine[0]);
+alert("hi");
 
 }
 </script>
