@@ -14,7 +14,7 @@ function myTask() {
 var fs = require("fs");
 var text = fs.readFileSync("./whattodo.txt");
 var textByLine = text.split("\n");
-alert(text[0]);
+alert(textByLine[0]);
 
 }
 </script>
