@@ -10,7 +10,7 @@ Can't think of anything to do?
 <button onclick="myTask()">let's go</button>
 
 <script>
- var file = "whattodo.txt";
+ const file = "https://raw.githubusercontent.com/Hope-T/whattodo/gh-pages/whattodo.txt";
   
 function myTask() {
  var rawFile = new XMLHttpRequest();
