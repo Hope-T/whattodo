@@ -12,7 +12,8 @@ Can't think of anything to do?
 function myTask() {
 
  var rawFile = new XMLHttpRequest();
-    rawFile.open("GET", whattodo.txt, false);
+ var url = 'whattodo.txt';
+    rawFile.open("GET", url, false);
     rawFile.onreadystatechange = function ()
     {
         if(rawFile.readyState === 4)
