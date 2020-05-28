@@ -12,7 +12,7 @@ Can't think of anything to do?
 function myTask() {
 
  var rawFile = new XMLHttpRequest();
-    rawFile.open("GET", "./whattodo.txt", false);
+    rawFile.open("GET", whattodo.txt, false);
     rawFile.onreadystatechange = function ()
     {
         if(rawFile.readyState === 4)
