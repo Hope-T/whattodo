@@ -1,18 +1,18 @@
 # What should I do?
 Bored?
-Can't think of anything to do? 
+Can't think of anything to do? yy
 **Run** this generator for an idea!
 
 <html>
   
-<button onclick="myTask('/whattodo.txt')">let's go</button>
+<button onclick="myTask()">let's go</button>
 
 <script>
   
-function myTask(file) {
+function myTask() {
 
  var rawFile = new XMLHttpRequest();
-    rawFile.open("GET", file, false);
+    rawFile.open("GET", 'whattodo.txt', false);
     rawFile.onreadystatechange = function ()
     {
         if(rawFile.readyState === 4)
