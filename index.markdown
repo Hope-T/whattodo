@@ -4,6 +4,7 @@ Can't think of anything to do?
 **Run** this generator for an idea!
 
 # Fixed Version
+<html>
 <code>
 	
 <button onclick="myTask()">let's go</button>
@@ -16,3 +17,4 @@ let myTask = async () => {
 }
 
 </code>
+</html>
