@@ -1,0 +1,17 @@
+<html>
+  
+<h1>Bored?</h1>
+<h2>Can't think of anything to do?</h2>
+<p>Run this generator for an idea!</p>
+<button onclick="myTask()">Let's go</button>
+
+<script>
+const url = "https://raw.githubusercontent.com/Hope-T/whattodo/gh-pages/whattodo.txt";
+let myTask = async () => {
+	let response = await fetch(url)
+	if (response.status == 200)
+		alert(await response.text())
+}
+</script>
+
+</html>
