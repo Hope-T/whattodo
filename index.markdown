@@ -13,7 +13,12 @@ const url = "https://raw.githubusercontent.com/Hope-T/whattodo/gh-pages/whattodo
 let myTask = async () => {
 	let response = await fetch(url)
 	if (response.status == 200){
-		alert(response.text());
+		var text = await response.text();
+		var textByLine = text.split("/n");
+		var oneTask = textByLine[0];
+		alert(oneTask);
+	
+	
 
 	}
 }
