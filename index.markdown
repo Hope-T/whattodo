@@ -15,11 +15,14 @@ let myTask = async () => {
 	if (response.status == 200){
 		var text = await response.text();
 		var textByLine = text.split('\n');
-		alert(textByLine[0]);
-	
-	
-
+		alert(textByLine[getRandomNumber(textByLine)]);
 	}
+}
+	
+function getRandomNumber(myArray){
+	return(Math.floor(Math.random() * myArray.length));
+
+
 }
 </script>
 </html>
