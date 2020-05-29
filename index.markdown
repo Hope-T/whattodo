@@ -14,8 +14,8 @@ let myTask = async () => {
 	let response = await fetch(url)
 	if (response.status == 200){
 		var text = await response.text();
-		var textByLine = text.slice(0,1);
-		alert(textByLine);
+		var textByLine = text.split('\n');
+		alert(textByLine[0]);
 	
 	
 
