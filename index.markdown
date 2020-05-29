@@ -20,8 +20,8 @@ let myTask = async () => {
 }
 	
 function getRandomNumber(myArray){
-	return(Math.floor((Math.random() * myArray.length));
-
+	var myNumber = Math.floor((Math.random() * myArray.length));
+	return(myNumber);
 
 }
 </script>
