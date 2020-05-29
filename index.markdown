@@ -12,8 +12,10 @@ Can't think of anything to do?
 const url = "https://raw.githubusercontent.com/Hope-T/whattodo/gh-pages/whattodo.txt";
 let myTask = async () => {
 	let response = await fetch(url)
-	if (response.status == 200)
-		alert(await response.text())
+	if (response.status == 200){
+		alert(response.text());
+
+	}
 }
 </script>
 </html>
