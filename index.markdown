@@ -3,7 +3,6 @@ Bored?
 Can't think of anything to do? 
 **Run** this generator for an idea!
 
-<code>
 
 <html>
   
@@ -19,5 +18,5 @@ let myTask = async () => {
 </script>
 </html>
   
-</code>
+
 
